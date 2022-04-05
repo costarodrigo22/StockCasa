@@ -5,11 +5,14 @@ import Centralizer from '../../components/Centralizer';
 
 import back from '../../assets/images/back.svg';
 import ProductForm from '../../components/ProductForm';
+import Loader from '../../components/Loader/index';
 
 export default function PageDefault() {
   return (
     <Centralizer>
       <Container>
+        <Loader />
+
         <header>
           <button type="button" className="back-button">
             <img src={back} alt="voltar" />
